@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #101820;
+  --ink: #101820;
+  --muted: #5b6472;
+  --border: #e2e5ea;
+  --border-strong: #c9cfd8;
+  --navy: #0b2545;
+  --gold: #a9824a;
+  --panel-hover: #f3f5f8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+/* ---------- shared "portfolio site" patterns ---------- */
+.section-title-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.section-eyebrow {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--navy);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.section-rule {
+  flex: 1;
+  height: 1px;
+  background: var(--border-strong);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+.card-grid.list {
+  grid-template-columns: 1fr;
+}
+.card {
+  display: block;
+  background: #ffffff;
+  padding: 20px 22px;
+  transition: background 0.2s ease;
+}
+.card:hover {
+  background: var(--panel-hover);
+}
