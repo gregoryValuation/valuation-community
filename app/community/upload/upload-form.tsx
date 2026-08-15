@@ -37,10 +37,10 @@ export function UploadForm() {
           defaultValue="12"
           className="rounded border border-[var(--border)] px-3 py-2"
         >
+          <option value="1">1 months</option>
           <option value="3">3 months</option>
           <option value="6">6 months</option>
-          <option value="12">12 months (standard sell-side horizon)</option>
-          <option value="24">24 months</option>
+          <option value="12">12 months</option>
         </select>
       </label>
       <label className="flex flex-col gap-1 text-sm">

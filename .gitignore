@@ -44,3 +44,6 @@ next-env.d.ts
 # raw design source files (large, not needed at runtime — see public/assets
 # for the optimized versions actually served)
 /design-sources
+
+.vercel
+.env*
