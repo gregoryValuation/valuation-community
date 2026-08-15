@@ -35,9 +35,7 @@ export default function Home() {
             Every investment decision rests on a view of what something is
             worth. Upload your own DCF model to put your view on record, or
             browse what everyone else has already published — company by
-            company, ticker by ticker. Everything here is shared for
-            informational and educational purposes only, and does not
-            constitute investment advice.
+            company, ticker by ticker.
           </p>
           <div className="flex gap-4">
             <Link
